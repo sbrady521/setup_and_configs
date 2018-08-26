@@ -20,6 +20,7 @@ apt install -y i3 i3-wm i3status i3lock dmenu
 apt install -y mesa-utils mesa-utils-extra
 apt install -y ubuntu-drivers-common 
 
+apt install -y vim
 apt install -y vim-common
 apt install -y gnome-system-monitor
 apt install -y chromium-browser
@@ -62,11 +63,20 @@ apt install -y update-inetd update-notifier
 apt install -y update-notifier-common
 apt install -y usb-creator-common usb-creator-gtk
 apt install -y libappindicator3-1
+apt install -y npm
+apt install -y curl python-software-properties
+apt install -y preload
 
 # Theming
 apt install -y lxappearance
 apt install -y gtk-chtheme
 apt install -y qt-qtconfig
+
+# React stuff
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+apt -y install nodejs
+npm install -g create-react-app
+npm install -g yarn
 
 
 # Set up git profile
