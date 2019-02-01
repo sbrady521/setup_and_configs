@@ -132,7 +132,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 
 # my frequently used programs
 bindsym $mod+m exec --no-startup-id gnome-terminal -e alsamixer
-bindsym $mod+b exec --no-startup-id google-chrome
+bindsym $mod+b exec --no-startup-id google-chrome 
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -175,9 +175,21 @@ bar {
         status_command i3status
         tray_output primary
         font pango:DejaVu Sans Mono 10
+        colors {
+            background #000000
+            statusline #ffffff
+            separator #666666
+
+            focused_workspace  #555555 #800080 #ffffff
+            active_workspace   #333333 #5f676a #ffffff
+            inactive_workspace #333333 #222222 #888888
+            urgent_workspace   #2f343a #900000 #ffffff
+            binding_mode       #2f343a #900000 #ffffff
+        }
 }
 
 # Startup applications
-exec --no-startup-id variety
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers 
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift -l -33.8688:151.2093
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
