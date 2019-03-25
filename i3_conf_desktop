@@ -189,7 +189,7 @@ bar {
 }
 
 # Startup applications
-exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers 
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/acx0yLB.png
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift -l -33.8688:151.2093
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
