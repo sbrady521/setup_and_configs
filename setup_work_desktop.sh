@@ -61,6 +61,7 @@ apt install -y python-minimal
 apt install -y make
 apt install -y gcc 
 apt install -y default-jre
+apt isntall -y redshift
 
 cd /home/sean/Programs
 
