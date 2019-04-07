@@ -152,4 +152,7 @@ cp vimrc ~/.vimrc
 cp preztorc ~/.zpreztorc
 cp i3status_desktop ~/.i3status.conf
 
+# Swap keys for vim
+echo "setxkbmap -option caps:swapescape" >> ~/.profile
+
 

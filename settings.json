@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.lineNumbers": "relative",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "keyboard.dispatch": "keyCode"
+}
