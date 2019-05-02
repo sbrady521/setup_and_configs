@@ -1,0 +1,47 @@
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+alias off="shutdown now"
+alias vs_update="wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb && sudo dpkg -i /tmp/code_latest_amd64.deb"
+alias out="sudo pkill -u sean"
+alias nstart="npm run start"
+alias ntest="npm run test"
+alias nlint="npm run lint"
+alias style="service elasticsearch start && redis-server"
+alias ns='npm start'
+alias gs='git status'
+alias gd='git diff'
+alias gpl='git pull'
+alias gph='git push'
+alias gpr='git pull --rebase origin'
+alias f='fuck'
+alias gmas='git checkout master'
+alias shove='git push -f --set-upstream origin'
+alias puke='git fetch origin && git reset --hard @{u} && git clean -d -f && git pull && git status'
+alias zrc='atom ~/.zshrc && source ~/.zshrc'
+alias tls='tmux ls'
+alias ta='tmux attach -t'
+alias zshrc='atom ~/.zshrc && source ~/.zshrc'
+alias csvquote='~/csvquote-master/csvquote'
+alias next='git rebase --continue'
+alias skip='git rebase --skip'
+alias punch='git add . && git commit --amend && shove'
+alias recent='git fetch --all && git branch --sort=-committerdate'
+alias logall='git log --graph --all --'
+
+alias diw='ssh -i ~/.ssh/ingest-worker.pem ubuntu@13.210.110.165'
+# alias diw2='ssh -i ~/.ssh/ingest-worker.pem ubuntu@ec2-54-252-153-10.ap-southeast-2.compute.amazonaws.com'
+alias piw='ssh -i ~/.ssh/prd-ingest-worker.pem ubuntu@13.54.252.56'
+alias piw2='ssh -i ~/.ssh/prd-ingest-worker.pem ubuntu@52.64.232.52'
+alias ci='ssh -i ~/.ssh/gitlab-runner.pem ubuntu@ec2-52-64-4-233.ap-southeast-2.compute.amazonaws.com'
+alias beef='ssh -i ~/.ssh/prd-ingest-worker.pem ubuntu@13.238.65.148'
+alias jerky='ssh -i ~/.ssh/ingest-worker.pem ubuntu@13.237.211.135'
+alias thicc='ssh -i ~/.ssh/prd-ingest-worker.pem ubuntu@52.63.40.95'
+
+source /home/sean/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/sean/Documents/z.sh
+
+export PATH=/home/sean/.local/bin:$PATH
+export EDITOR=vim

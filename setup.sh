@@ -81,7 +81,7 @@ npm install -g yarn
 
 # Set up git profile
 git config --global user.name "Sean Brady"
-git config --global user.email "seanbrady521@gmail.com"
+git config --global user.email "sean.brady@stylearcade.com.au"
 
 # Prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
